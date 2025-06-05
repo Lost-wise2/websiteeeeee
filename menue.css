@@ -95,6 +95,13 @@ body {
   overflow-x: visible;
 }
 
+
+.flex img:hover {
+  cursor: grab;
+  transform: rotate(10deg);
+  border-radius: 30px;
+  filter: contrast(120%);
+}
 .flex p {
   z-index: 20;
   margin-top: 10px;

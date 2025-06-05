@@ -130,22 +130,25 @@
   */
   .menues {
     display: flex;
-    width: 450px;
+    width: 500px;
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
   }
   .menues img {
     overflow: hidden;
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
   }
-
+.menue {
+  width: 40%;
+}
   .overlay_text {
     overflow: hidden;
-    margin-left: 100px;
+    margin-left: 90px;
     margin-top: -30px;
     font-size: 25px;
+    width: 180px; 
   }
   .carder h2 {
     margin-top: 20px;
@@ -180,7 +183,6 @@
 }
 .overlay_text {
   height: 100%;
-  width: 100%;
   background-color: #0000008f;
   transform: translate(-50%, -85%);
   opacity: 0;
@@ -352,6 +354,9 @@ li {
 #character {
   width: 75px;
   transform: rotate(-10deg);
+}
+#character:hover {
+  cursor: copy;
 }
 .character-box {
   transition: 1s;

@@ -12,9 +12,11 @@
   </head>
   <body>
     <header id="header">
-      <a class="logooo" href="index.html"><img src="logo1.png" alt="silly logo" /></a>
+      <a class="logooo" href="index.html"
+        ><img src="logo1.png" alt="silly logo"
+      /></a>
       <nav>
-        <a class="button" href="index.html">About</a>
+        <a class="button" href="index.html#texty">About</a>
         <a class="button" href="Menu.html">Menu</a>
         <a class="button" href="contact_us.html">Book</a>
       </nav>
@@ -34,7 +36,7 @@
 
       <h2 class="titles" id="appiti">Appetizers</h2>
 
-      <section class="Apps" >
+      <section class="Apps">
         <div
           class="flex"
           onclick="showPopup('Stuffed Mimi Bell Peppers:', 'Filled with chees and herbs for a colorful, flavor bite.')"
@@ -86,7 +88,10 @@
           class="flex"
           onclick="showPopup('Osso Buco', 'Braised veal shanks cooked in white wine and vegetables, often served with gremolata and risotto.')"
         >
-          <img src="food1.jpg" alt="i want this, lowkey looks good. rice i think, with meat" />
+          <img
+            src="food1.jpg"
+            alt="i want this, lowkey looks good. rice i think, with meat"
+          />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Praesentium nam voluptatem deserunt vel at quod vitae esse quisquam
@@ -97,7 +102,10 @@
           class="flex"
           onclick="showPopup('Bruschetta & Focaccia:', 'As appetizers, classic tomato bruschetta and rosemary focaccia are always crowd-pleasers.')"
         >
-          <img src="2food.jpg" alt="WHY ARE WE SERVING STRAWBERRIES AS A MAIN COURSE??" />
+          <img
+            src="2food.jpg"
+            alt="WHY ARE WE SERVING STRAWBERRIES AS A MAIN COURSE??"
+          />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Praesentium nam voluptatem deserunt vel at quod vitae esse quisquam
@@ -108,7 +116,10 @@
           class="flex"
           onclick="showPopup('Braciole:', 'Thin slices of beef are spread with a mixture of breadcrumbs, cheese, herbs, and sometimes cured meats, then rolled up and secured.')"
         >
-          <img src="food3.webp" alt="weird rolled meat thing, more like tryig to make hot dogs fancy" />
+          <img
+            src="food3.webp"
+            alt="weird rolled meat thing, more like tryig to make hot dogs fancy"
+          />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Praesentium nam voluptatem deserunt vel at quod vitae esse quisquam
@@ -168,7 +179,10 @@
           class="flex"
           onclick="showPopup('Zabaglione:', 'A light, airy custard made by whisking together egg yolks, sugar, and Marsala wine over gentle heat.')"
         >
-          <img src="4d.jpg" alt="miks, favorite. Strawberry, recommend for autism" />
+          <img
+            src="4d.jpg"
+            alt="miks, favorite. Strawberry, recommend for autism"
+          />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Praesentium nam voluptatem deserunt vel at quod vitae esse quisquam
@@ -260,46 +274,45 @@
       </section>
     </div>
     <!--The infamous footer -->
-    <div class="feeter">
-      <div class="feet">
-        <div class="foot">
-          <div class="lable">
-            <img id="tiny_logo" src="logo1.png" alt="" />
-            <p>Gullberg's Restaurant</p>
+    <footer>
+      <div class="feeter">
+        <div class="feet">
+          <div class="foot">
+            <div class="lable">
+              <img id="tiny_logo" src="logo1.png" alt="" />
+              <p>Gullberg's Restaurant</p>
+            </div>
+            <!--Real links to the different websites owned by the creators of the official game -->
+            <ul class="socials">
+              <li>
+                <a href="https://www.instagram.com/steel_wool_studios/"
+                  ><img src="insta.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://x.com/steelwoolstudio"
+                  ><img src="twitter.png" alt=""
+                /></a>
+              </li>
+            </ul>
           </div>
-          <!--Real links to the different websites owned by the creators of the official game -->
-          <ul class="socials">
-            <li>
-              <a href="https://www.instagram.com/steel_wool_studios/"
-                ><img src="insta.png" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="https://x.com/steelwoolstudio"
-                ><img src="twitter.png" alt=""
-              /></a>
-            </li>
-          </ul>
+          <div class="foot">
+            <div class="footer">
+              <div class="contact-info">
+                <p><strong>Address:</strong> Via Roma 123, Florence, Italy</p>
+                <p><strong>Phone:</strong> +39 055 1234567</p>
+                <p><strong>Email:</strong> info@latrattoriaitaliana.com</p>
+                <p><strong>Opening Hours:</strong> Mon–Sun: 12:00–23:00</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="foot">
-          <div class="footer">
-            <div class="contact-info">
-            <p><strong>Address:</strong> Via Roma 123, Florence, Italy</p>
-            <p><strong>Phone:</strong> +39 055 1234567</p>
-            <p><strong>Email:</strong> info@latrattoriaitaliana.com</p>
-            <p><strong>Opening Hours:</strong> Mon–Sun: 12:00–23:00</p>
-          </div>
-          </div>
-        </div>
-        
       </div>
-    </div>
+    </footer>
 
-   
-         
-        
+    <section>
       <div class="popup-overlay" id="popupOverlay">
-        <div class="popup" id="popup"  >
+        <div class="popup" id="popup">
           <button class="close-popup" onclick="hidePopup()">×</button>
           <h2 id="popupTitle">Book Title</h2>
           <p id="popupText">Book description goes here...</p>

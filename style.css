@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+*{
+  scroll-margin-top: 200px;
+}
+/*pone*/
+@media screen and (width <= 600px) {
+  .feeter {
+    font-size: 8px;
+    text-wrap: wrap;
+  }
+
+  .socials img {
+    height: 20px;
+  }
+  #tiny_logo {
+    margin-left: -10px;
+  }
+  .socials {
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+}
+
+/* puter */
+@media screen and (width > 600px) {
+  .socials {
+    margin-left: 130px;
+    margin-top: -20px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  /*overflow-x: hidden;*/
+  font-family: "Merriweather", serif;
+  scroll-margin-top: 80px;
+}
+body {
+  background: #271c0c;
+  /*  background: linear-gradient(160deg, #AE9A7F, #3a0606); */
+}
+
+/* i moved the media queries to the bottom, they should always be at the bottom 
+you are evil, i want them ON TOP >:/ */
+
+header {
+  display: flex;
+  background-color: #403019;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: visible;
+  z-index: 1000000;
+}
+
+.shrink {
+  .logooo img {
+    width: 100px;
+    left: 10px;
+    top: 10px;
+    transform: rotate(-20deg);
+  }
+  nav {
+    a {
+      padding: 10px;
+      font-size: 20px;
+    }
+  }
+}
+
+#header * {
+  transition: 0.5s;
+}
+
+/*what logo dude??*/
+#logo img {
+  width: 150px; /* adjust size */
+  height: 150px;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+nav a {
+  color: #fff4e7;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 0%;
+  padding: 20px;
+  overflow: hidden;
+  transition: background-color 0.1s, color 0.1s;
+  font-size: 30px;
+}
+
+.logooo img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: filter 0.2s;
+  border-radius: 100%;
+  width: 150px;
+}
+
+.logooo img:hover {
+  /* transform: rotate(-20deg) scale(0.8); */
+  filter: saturate(150%) brightness(80%);
+}
+
+nav a:hover {
+  background-color: #fff4e7;
+  color: #403019;
+}
+
+.button {
+  align-content: flex-end;
+}
+
+/* footer stuff*/
+.feeter {
+  overflow: hidden;
+  margin-top: 50px;
+  width: 100%;
+  height: 150px;
+  color: white;
+  background: linear-gradient(
+    124deg,
+    rgba(51, 37, 12, 1) 0%,
+    rgba(184, 157, 108, 1) 100%
+  );
+}
+
+.lable img {
+  scale: 0.7;
+}
+.feet {
+  overflow: hidden;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lable {
+  overflow: visible;
+  display: flex;
+  align-items: center;
+}
+.label p {
+  overflow: visible;
+}
+.foot {
+  margin: 20px;
+  width: 350px;
+}
+
+.footer {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  gap: 15px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding-right: 12px;
+  border-right: 1px solid white;
+}
+#not-important {
+  border-right: 0px;
+  margin-left: -5px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  filter: invert(100%);
+}
+.socials li {
+  transition: 0.3s;
+}
+
+.socials li:hover {
+  scale: 1.2;
+}
+
+#tiny_logo {
+  width: 100px;
+}
+.foot button {
+  width: 10px;
+}
+
+@media screen and (width <= 600px) {
+  .logooo img {
+    width: 100px;
+    left: 10px;
+    top: 10px;
+  }
+  nav {
+    gap: 5px;
+    a {
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+}
+/* @media screen and (width >= 600px) {
+  nav {
+    height: 100px;
+  }
+
+  .logooo img {
+    width: 150px;
+  }
+  nav a {
+    font-size: 30px;
+  }
+} */

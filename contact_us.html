@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gullberg's Restaurant</title>
+    <link rel="shortcut icon" href="logo1.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <a class="logooo" href="main.html"><img src="logo1.png" alt="" /></a>
+      <nav>
+        <a class="button" href="main.html#texty">About</a>
+        <a class="button" href="Menu.html">Menu</a>
+        <a class="button" href="contact_us.html">Book</a>
+      </nav>
+    </header>
+    <div class="redemption">
+      <div class="container" role="main" aria-labelledby="page-title">
+        <h1 id="page-title">La Bella Vita Reservation Contract</h1>
+        <p class="subtitle">
+          Experience the elegance of authentic Italian dining
+        </p>
+
+        <form id="reservationForm" aria-describedby="contractTerms">
+          <label for="fullName"
+            >Full Name <span aria-hidden="true">*</span></label
+          >
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            required
+            aria-required="true"
+            placeholder="Giovanni Rossi"
+          />
+
+          <label for="email"
+            >Email Address <span aria-hidden="true">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true"
+            placeholder="giovanni@example.com"
+          />
+
+          <label for="phone"
+            >Phone Number <span aria-hidden="true">*</span></label
+          >
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            aria-required="true"
+            placeholder="+39 123 456 7890"
+            pattern="^\+?\d{7,15}$"
+          />
+
+          <label for="date"
+            >Reservation Date <span aria-hidden="true">*</span></label
+          >
+          <input
+            type="date"
+            id="date"
+            name="date"
+            required
+            aria-required="true"
+            min=""
+          />
+
+          <label for="time"
+            >Reservation Time <span aria-hidden="true">*</span></label
+          >
+          <input
+            type="time"
+            id="time"
+            name="time"
+            required
+            aria-required="true"
+            min="17:00"
+            max="22:00"
+          />
+
+          <label for="guests"
+            >Number of Guests <span aria-hidden="true">*</span></label
+          >
+          <select id="guests" name="guests" required aria-required="true">
+            <option value="" disabled selected>Select guests</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5+</option>
+          </select>
+
+          <label for="specialRequests">Special Requests (optional)</label>
+          <textarea
+            id="specialRequests"
+            name="specialRequests"
+            placeholder="Dietary needs, celebrations, etc."
+          ></textarea>
+
+          <button type="submit" aria-label="Submit Reservation Contract">
+            Confirm Reservation
+          </button>
+        </form>
+
+        <section
+          class="terms"
+          id="contractTerms"
+          tabindex="0"
+          aria-label="Reservation Contract Terms"
+        >
+          <strong>Reservation Contract Terms:</strong>
+          <p>
+            A deposit of €150 is required to confirm your reservation for
+            parties of 6 or more guests. The deposit will be refunded after the
+            event provided that the majority of the reserved guests attend and
+            order from the menu. Cancellations must be made at least 72 hours
+            prior to the reservation to avoid forfeiting the deposit. The final
+            guest count must be confirmed 7 days before the event. Our elegant
+            private dining rooms are available for groups with minimum food and
+            beverage spend requirements. By submitting this form, you agree to
+            our policies and terms of service. :>
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!--The infamous footer -->
+    <div class="feeter">
+      <div class="feet">
+        <div class="foot">
+          <div class="lable">
+            <img id="tiny_logo" src="logo1.png" alt="" />
+            <p>Gullberg's Restaurant</p>
+          </div>
+          <!--Real links to the different websites owned by the creators of the official game -->
+          <ul class="socials">
+            <li>
+              <a href="https://www.instagram.com/steel_wool_studios/"
+                ><img src="insta.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://x.com/steelwoolstudio"
+                ><img src="twitter.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot">
+          <div class="footer">
+            <div class="contact-info">
+              <p><strong>Address:</strong> Via Roma 123, Florence, Italy</p>
+              <p><strong>Phone:</strong> +39 055 1234567</p>
+              <p><strong>Email:</strong> info@latrattoriaitaliana.com</p>
+              <p><strong>Opening Hours:</strong> Mon–Sun: 12:00–23:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Set minimum date to today for reservation date input
+      const dateInput = document.getElementById("date");
+      const today = new Date().toISOString().split("T")[0];
+      dateInput.setAttribute("min", today);
+
+      // Form submission handler with simple validation and animation feedback
+      const form = document.getElementById("reservationForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Simple validation example
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        // Animate button to show success
+        const btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        btn.textContent = "Reservation Confirmed! Grazie!";
+        btn.style.backgroundColor = "#4CAF50";
+
+        // Here you would typically send form data to server or API
+
+        // Optionally reset form after delay
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.textContent = "Confirm Reservation";
+          btn.style.backgroundColor = "#8b2c2c";
+          form.reset();
+        }, 4000);
+      });
+    </script>
+  </body>
+</html>

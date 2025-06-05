@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+      }
+
+      .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-body">
+      <section class="hero">
+        <h2>Welcome to La Trattoria Italiana</h2>
+        <p>Experience the true taste of Italy in every bite.</p>
+      </section>
+
+      <section class="story-highlight" id="card">
+        <h2>La Nostra Storia</h2>
+        <p>
+          Since 1985, La Trattoria Italiana has been a home for lovers of true
+          Italian cuisine. Our story began with Nonna Rosa's secret recipes and
+          a passion for sharing the warmth of Italian hospitality. Every meal is
+          a celebration of family, tradition, and the vibrant spirit of
+          Florence.
+        </p>
+        <br />
+        <br />
+        <p>
+          I dunno man, just 1. work on the absolute basics of each page and
+          simple css with hover
+        </p>
+        <br />
+        <p>then 2. focus more on js idc, do somesthing</p>
+        <br />
+        <p>
+          okay how about this, you copy the website, and add js for the
+          animations, no need for the fancy scroll effect. and if so, we can add
+          smth similiar later
+        </p>
+      </section>
+
+      <!-- IMAGE GALLERY SECTION -->
+      <section class="menu-gallery">
+        <img class="cards" id="foodImage1" src="bild1.jpg" alt="" />
+        <img class="cards" id="foodImage2" src="bild2.jpg" alt="" />
+        <img class="cards" id="drinksImage" src="drinks.jpg" alt="" />
+      </section>
+    </div>
+    <!-- CHEF SECTION (keep your original Chef Mario section) -->
+    <section class="section chef-section" id="chef">
+      <h2>Chef Mario</h2>
+      <div class="chef-container">
+        <img src="chef.jpg" alt="" />
+        <p>
+          Meet Chef Mario, our head chef with 20 years of experience in Italian
+          cuisine. La Trattoria Italiana is a family-owned restaurant nestled in
+          the heart of Florence, serving authentic Italian dishes crafted from
+          time-honored recipes passed down through generations. Since 1985, our
+          passion has been to bring the true flavors of Italy to your table with
+          fresh, locally sourced ingredients and a warm, welcoming atmosphere.
+          Our story began with Nonna Rosa's secret recipes, blending simplicity
+          and tradition in every bite. We pride ourselves on creating a cozy
+          dining experience where every guest feels like part of the family.
+          From our classic pasta to our wood-fired pizzas and homemade desserts,
+          each dish is a celebration of Italy's rich culinary heritage. Join us
+          for a meal and experience the heart and soul of Italian cuisine —
+          because here, food is more than just nourishment; it's a way to
+          connect, celebrate, and create memories.
+        </p>
+      </div>
+    </section>
+
+    <!-- Italian Food Menu Popup -->
+    <div id="foodMenu" class="popup">
+      <span class="close">&times;</span>
+      <img
+        src="food.png"
+        alt="Cheeseee"
+        style="width: 100%; max-width: 800px"
+      />
+    </div>
+
+    <!-- Another Food Menu Popup -->
+    <div id="foodMenu2" class="popup">
+      <span class="close">&times;</span>
+      <img
+        src="food.png"
+        alt="Second Italian Food Menu"
+        style="width: 100%; max-width: 800px"
+      />
+    </div>
+
+    <!-- Drinks Menu Popup -->
+    <div id="drinksMenu" class="popup">
+      <span class="close">&times;</span>
+      <img
+        src="drinks.png"
+        alt="Drinks Menu"
+        style="width: 100%; max-width: 800px"
+      />
+    </div>
+
+    <!-- CONTACT US + MAP SECTION -->
+    <section class="section contact-section" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <div class="left-side">
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <p><strong>Address:</strong> Via Roma 123, Florence, Italy</p>
+            <p><strong>Phone:</strong> +39 055 1234567</p>
+            <p><strong>Email:</strong> info@latrattoriaitaliana.com</p>
+            <p><strong>Opening Hours:</strong> Mon–Sun: 12:00–23:00</p>
+          </div>
+        </div>
+        <div class="right-side">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.933189244042!2d11.25580661513288!3d43.769560979117776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a540dcacc7f3f%3A0xb4b67c0dd7c97e7b!2sFlorence%2C%20Metropolitan%20City%20of%20Florence%2C%20Italy!5e0!3m2!1sen!2sus!4v1634567890123"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gullberg's Restaurant</title>
+    <link rel="shortcut icon" href="logo1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="harry_styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <a class="logooo" href="main.html"><img src="logo1.png" alt="" /></a>
+      <nav>
+        <a class="button" href="main.html#texty">About</a>
+        <a class="button" href="Menu.html">Menu</a>
+        <a class="button" href="contact_us.html">Book</a>
+      </nav>
+    </header>
+
+    <section class="under_image">
+      <h1>Gullberg's Restaurant</h1>
+      <p>Yummy food, very tasty</p>
+      <ul>
+        <li>
+          <a href="contact_us.html"><button>Book</button></a>
+        </li>
+      </ul>
+    </section>
+    <div class="mother">
+      <div class="candy">
+        <div class="carders">
+          <div class="carder" id="texty">
+            <h2 style="height: fit-content">About us</h2>
+            <p>
+              pizza pizza spaghetti pizza pizza pizza spaghetti pizza pizza
+              pizza spaghetti pizzapizza pizza spaghetti pizza pizza pizza
+              spaghetti pizza pizza pizza spaghetti pizza pizza pizza spaghetti
+              pizza pizza pizza spaghetti pizzapizza pizza spaghetti pizza pizza
+              pizza spaghetti pizza pizza pizza spaghetti pizza pizza pizza
+              spaghetti pizza pizza pizza spaghetti pizza pizza pizza spaghetti
+              pizza pizza pizza spaghetti pizza pizza pizza spaghetti pizza
+            </p>
+          </div>
+          <div class="carder"><img src="good1.webp" alt="" /></div>
+          <div class="carder"><img src="good2.webp" alt="" /></div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <div style="width: 100%; display: flex; justify-content: center">
+        <h2>Here is our menue and what not, also please book</h2>
+      </div>
+      <div style="width: 100%; display: flex; justify-content: center">
+        <h4>Take a look here and here i guess</h4>
+      </div>
+      <br /><br /><br />
+      <div class="wrapper">
+        <div class="the_silly">
+          <div class="menues">
+            <div class="menue">
+              <img src="afood.jpg" alt="" />
+              <a href="Menu.html#appiti"
+                ><div class="overlay_text"><p>app</p></div></a
+              >
+            </div>
+            <div class="menue">
+              <img src="food3.webp" alt="" />
+              <a href="Menu.html#main_fod"
+                ><div class="overlay_text"><p>main</p></div></a
+              >
+            </div>
+            <div class="menue">
+              <img src="d.jpg" alt="" />
+              <a href="Menu.html#sweeties"
+                ><div class="overlay_text"><p>dez</p></div></a
+              >
+            </div>
+            <div class="menue">
+              <img src="3w.jpg" alt="" />
+              <a href="Menu.html#hydrate"
+                ><div class="overlay_text"><p>drink</p></div></a
+              >
+            </div>
+          </div>
+          <div class="reservation_form">
+            <form>
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <input type="text" placeholder="Number of people" required />
+              <textarea
+                rows="4"
+                placeholder="Any additional info?"
+                required
+              ></textarea>
+
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+
+    <!--The infamous footer -->
+    <div class="feeter">
+      <div class="feet">
+        <div class="foot">
+          <div class="lable">
+            <img id="tiny_logo" src="logo1.png" alt="" />
+            <p>Gullberg's Restaurant</p>
+          </div>
+          <!--Real links to the different websites owned by the creators of the official game -->
+          <ul class="socials">
+            <li>
+              <a href="https://www.instagram.com/steel_wool_studios/"
+                ><img src="insta.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://x.com/steelwoolstudio"
+                ><img src="twitter.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot">
+          <div class="footer">
+            <div class="contact-info">
+              <p><strong>Address:</strong> Via Roma 123, Florence, Italy</p>
+              <p><strong>Phone:</strong> +39 055 1234567</p>
+              <p><strong>Email:</strong> info@latrattoriaitaliana.com</p>
+              <p><strong>Opening Hours:</strong> Mon–Sun: 12:00–23:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="character-box" class="hidden">
+      <img src="character.png" alt="Character" id="character" />
+      <div id="booking-circle">
+        <a href="contact_us.html">Click to Book</a>
+      </div>
+    </div>
+    <script src="scripts.js">
+          document.getElementById("character").onclick = function () {
+        window.location.href = "contact_us.html";
+      };
+
+      document.getElementById("booking-circle").onclick = function () {  window.location.href = "contact_us.html";   };
+    </script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

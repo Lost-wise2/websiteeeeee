@@ -1,0 +1,206 @@
+/*pone*/
+@media screen and (max-width: 600px) {
+  .flex p {
+    margin-left: 20px;
+  }
+  .flex img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* puter */
+@media screen and (min-width: 600px) {
+  .flex p {
+    margin-left: -20px;
+  }
+  .flex img {
+    width: 280px;
+    height: 280px;
+  }
+}
+body {
+  overflow-x: hidden;
+}
+/*menu*/
+
+.mother {
+  background: #271c0c;
+}
+
+.intro {
+  color: white;
+  padding-top: 50px;
+}
+
+.intro {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+.intro ul {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  text-decoration: none;
+  list-style-type: none;
+}
+.intro ul li {
+  list-style-type: none;
+  overflow: visible;
+}
+.intro ul li a {
+  overflow: hidden;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+.intro ul li a:hover {
+  color: #271c0c;
+  background-color: white;
+}
+
+.Apps,
+.Mains,
+.Desserts,
+.Drinksss,
+.Childrens {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 60px;
+  margin-bottom: 100px;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+/*menue page*/
+.titles {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  animation: fadeUp 1s ease forwards;
+  opacity: 1;
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+  overflow-x: visible;
+}
+
+.flex p {
+  z-index: 20;
+  margin-top: 10px;
+  color: black;
+  width: 300px;
+  padding: 10px;
+  background-color: #cab08b;
+  height: fit-content;
+  box-shadow:10px 8px 2px 5px #5d4116;
+}
+
+/* Flexbox för varje menysektion */
+section.Apps,
+section.Mains,
+section.Desserts,
+section.Drinksss,
+section.Childrens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em;
+}
+
+/* Fördröjning för animation */
+.flex:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.flex:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.flex:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.flex:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.flex:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.flex:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+/* Bilder */
+.flex img {
+  transition: transform 0.3s ease;
+}
+
+/* Animation: fade and move up */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Popup styles */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(61, 30, 25, 0.85);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+.popup {
+  background: #38251a;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  color: #f0f0f0;
+  position: relative;
+}
+.popup h2 {
+  color: #f89844;
+  margin-bottom: 15px;
+}
+.popup p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #e4c28b;
+}
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.4rem;
+  background: none;
+  border: none;
+  color: #fca311;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .popup {
+    width: 90%;
+    padding: 20px;
+  }
+}

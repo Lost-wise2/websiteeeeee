@@ -1,0 +1,514 @@
+/* Welcome to the CSS file for all my other HTML files, because why the heck would I have separate CSS files for each??*/
+/* Either way, thank you for viewing this. And I offer my apologies for any code that does not make sense or is terribly written*/
+
+/* Sets the font and margin, padding and also scroll margin so when you use anchor links, the navbar does not cover the content when you jump there.*/
+*  {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-margin-top: 75px; 
+    scroll-behavior: smooth;
+}
+/*sets size for all p text */
+p {
+    font-size: 18px;
+}
+/*sets background and hides the scroll bar for horizontal overflow since it was very ugly */
+body {
+    background-image: url(adorable.jpg);
+    background-size: cover; /*no repeating background please since it is ugly */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+/*Logo :thumbs-up: */
+.logo {
+    position: fixed;
+    top: -5px;
+    left: 0;
+    z-index: 11;
+    scale: 0.8;
+    border-radius: 50px;
+}
+
+
+
+
+/*styling for the navbar, glass morphism <3 */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    align-items: center;
+    gap: 20px;
+}
+.navbar a {
+    padding: 10px;
+    margin-right: 10px;
+}
+.navbar .active {
+    opacity: 1;
+    
+    box-shadow: 0 2px 20px rgba(149, 0, 255, 0.4);
+    box-shadow: 0 0 20px rgb(203, 98, 255);
+}
+
+
+.navbar #important {
+    background-color: rgb(119, 160, 234);
+}
+nav ul {
+    list-style-type: none;
+}
+
+#shape {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 600px;
+    z-index: 2;
+}
+
+.hero #day {
+    background: url(pink.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-color: rgba(255, 255, 255, 0.3);*/
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+    margin-bottom: -100px;
+    box-shadow: 0px 11px 12px rgba(15, 0, 101, 0.3)
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    z-index: 3;
+    font-weight: bolder;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.5);
+}
+.hero p {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    z-index: 3;
+    font-weight: bolder;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.5);
+}
+
+.hero-buttons {
+margin-left: 360px;
+}
+
+.hero a {
+    position: relative;
+    width: 80px;
+    padding: 10px 20px 10px;
+    border: 2px solid rgb(35, 139, 188);
+    color: white;
+    border-radius: 20px;
+    /*top: -60px;*/
+    z-index: 4;
+    margin-left: 100px;
+}
+.hero a, .navbar a {
+    background-color: rgb(168, 198, 255);
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(136, 101, 198);
+    margin-right: 10px;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 3px 20px rgba(120, 0, 180, 0.4);
+    opacity: 0.7;
+}
+.hero a:hover, .navbar a:hover {
+    transition: 0.5s;
+    opacity: 1;
+    box-shadow: 0 2px 20px rgba(149, 0, 255, 0.3);
+}
+.hero a:active, .navbar a:active {
+    opacity: 1;
+    box-shadow: inset 0 4px 30px rgba(149, 0, 255, 0.3);
+}
+
+
+
+.banner {
+    height: 250px;
+    background: linear-gradient(90deg,rgb(241, 190, 199),  rgb(168, 168, 230), rgb(216, 191, 144));
+    border-radius: -20px;
+    margin-bottom: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 0px 11px 12px rgba(15, 0, 101, 0.3)
+}
+.headline {
+    font-size: 50px;
+    color: white;
+    z-index: 3;
+    font-weight: bolder;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.5);
+    padding: 40px;
+}
+
+
+
+.wrapper {
+    margin: 10px;
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+
+
+.info {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 33px;
+    margin-bottom: 20px;
+    height: fit-content;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    display: flex;
+    gap: 10px;
+}
+#SUN {
+    width: 600px;
+    border-radius: 20px;
+}
+.intros {
+    padding: 10px 300px 10px 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 33px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+.info-boxes img {
+    width: 600px;
+    border-radius: 30px;
+}
+.info-box {
+    width: 580px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 33px;
+    margin-bottom: 20px;
+    height: fit-content;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 33px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.boxes {
+    margin: 10px 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+.box {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 33px;
+    height: 400px;
+    /*width: 300px;*/
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card img, .box img {
+    height: auto;
+    overflow-x: hidden;
+    border-radius: 33px;
+}
+#not-this {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 200px;
+}
+
+#skinny {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.card img:hover, .box img:hover {
+    opacity: 0.5;
+}
+.box img:active {
+    scale: 0.9;
+}
+.orange {
+    transition: 0.3s;
+    height: 400px;
+    width: 300px;
+    border-radius: 33px;
+}
+.orange:hover {
+    background-color: orange;
+    transform: rotate(10deg);
+}
+.orange:active {
+    scale: 0.9;
+}
+
+
+
+
+
+
+.the-questions {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.answers {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 33px;
+    height: 400px;
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+.videod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+iframe {
+    width: 840px;
+    height:472.5px;
+    border: 2px solid rgba(255, 255, 255, 0.474);
+    border-radius: 33px;
+}
+
+
+
+
+
+
+.distable {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+td, th {
+    padding: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+}
+th {
+    background-color: rgba(193, 193, 193, 0.6);
+}
+#boring {
+    background-color: rgba(222, 222, 222, 0.6);
+}
+#non {
+    background-color: rgba(255, 147, 147, 0.6);
+}
+#yessir {
+    background-color: rgba(198, 239, 136, 0.6);
+}
+table tr td:first-child, 
+table tr th:first-child {
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+}
+table tr th {
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+table tr:first-child th:first-child {
+    border-top-left-radius: 20px;
+}
+table tr:first-child th:last-child {
+    border-top-right-radius: 20px
+}
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 20px
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+
+
+
+.the-form {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    padding: 50px;
+    margin: 30px 50px 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.names {
+    display: flex;
+    gap: 40px;
+}
+
+form input, form textarea {
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+
+
+
+
+
+
+.feeter {
+    width: 100%;
+    height: 200px;
+    color: white;
+    background: linear-gradient(90deg, rgb(113, 52, 183), rgb(225, 225, 163));
+}
+
+.lable {
+    display: flex;
+    align-items: center;
+}
+.lable img {
+    scale: 0.7;
+}
+.feet{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.foot {
+    margin: 20px;
+    width: 350px;
+    
+    
+}
+
+.footer {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 15px;
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding-right: 12px;
+    border-right: 1px solid white;
+}
+#not-important {
+    border-right: 0px;
+    margin-left: -5px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.socials {
+    margin-left: 0px;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    filter: invert(100%);
+}
+.socials li {
+    transition: 0.3s;
+}
+
+.socials li:hover {
+    scale: 1.2;
+}
+
